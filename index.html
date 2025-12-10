@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemental Change Game (E-W-L)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>⚡💧⛰ Elemental Change! ⛰💧⚡</h1>
+        <p class="rules">**The Cycle:** Water erodes Earth, Earth grounds Lightning, Lightning hits Water.</p>
+
+        <div class="limit-setting">
+            <label for="match-limit">Set Max Rounds (1-50):</label>
+            <input type="number" id="match-limit" min="1" max="50" value="5">
+            <button id="set-limit">Set Limit</button>
+        </div>
+        
+        <div class="score-board">
+            <div id="user-score" class="score">You: 0</div>
+            <div id="comp-score" class="score">Computer: 0</div>
+        </div>
+
+        <div class="choices">
+            <button id="e" class="choice-btn" disabled>⛰ Earth</button>
+            <button id="w" class="choice-btn" disabled>💧 Water</button>
+            <button id="l" class="choice-btn" disabled>⚡ Lightning</button>
+        </div>
+
+        <div id="result" class="message">Set the match limit and press "Set Limit" to begin!</div>
+        <div id="history" class="history"></div>
+        <button id="reset" class="reset-btn">Restart Game</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
